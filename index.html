@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML + CSS</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: black; font-family: Arial, Helvetica, sans-serif;">
+    <header style="display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: black;">
+        <h1 style="font-size: 48px; color: white;">
+            HTML Only
+        </h1>
+        <div style="font-size: medium; color: white;">
+            Navigation
+        </div>
+    </header>
+    <main>
+        <hr style="color: orange; border: 1px solid; margin-top: 8px; margin-bottom: 8px;">
+        <div style="border: 12px magenta solid; background-color: bisque;">
+            <h1 style="margin: 16px; font-size: 36px;">
+                What is this?
+            </h1>
+            <p style="margin: 16px; font-size: x-large;">
+                This page was inspired by a <a href="/index.html" style="color: blue; text-decoration: underline; text-decoration-color: turquoise;">tweet from Salma</a>.
+                Pretty HTML only pages are difficult to make well, and accessible.
+                But here we are. I'm trying my best.
+            </p>
+        </div>
+        <hr style="color: orange; border: 1px solid; margin-top: 8px; margin-bottom: 8px;">
+        <div style="border: 12px skyblue solid; background-color: bisque;">
+            <h1 style="margin: 16px; font-size: 36px;">
+                How does this work?
+            </h1>
+            <p style="margin: 16px; font-size: x-large;">
+                The key to a lot of this is leveraging using tables with a <code style="font-size: 20px;">role="presentation"</code> attribute to make decorated sections without css.
+                If you view source on the page, you'll see that there are a LOT of tables.
+                The table tag typically is used to display tabular data and should NOT be used as a layout method.
+                However, since I am not allowed to use CSS, I am pretty much exclusively relying on tables for this purpose.
+                The presentation role tells the browser to not expose the table and its tabluar children in the accessibility tree.
+                This will make it easier to navigate for assistive technology.
+            </p>
+            <p style="margin: 16px; font-size: x-large;">
+                I'm also leveraging some deprecated HTML elements from HTML 3.2 that you should never use.
+                In order to be "compliant", I've added the HTML 3.2 doctype at the top of the page:
+                <br>
+                <code>
+                     &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"&gt;
+                </code>
+                <br>
+                This helps give a hint to the browser that we are going to use some older stuff.
+            </p>
+            <p style="margin: 16px; font-size: x-large;">
+                HOWEVER, I'm also using some newer things such as
+                <code>
+                    details/summary, section, main, header, and footer.
+                </code>
+                So I'm just making a mess of my doctype and what I should be actually using!
+            </p>
+        </div>
+        <hr style="color: orange; border: 1px solid; margin-top: 8px; margin-bottom: 8px;">
+        <div style="border: 12px orange solid; background-color: bisque;">
+            <h1 style="margin: 16px; font-size: 36px;">
+                But why?
+            </h1>
+            <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmlrMTlyYmYwNXJ3eXpwd3E2dWsxaXkzOHV1Z2JpOWU5cndmcHRubiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l2JhtKtDWYNKdRpoA/giphy.gif" alt="GIF" style="margin: 16px">
+            <p style="margin: 16px; font-size: x-large;">
+                I make terrible things. This was an exciting <a href="/index.html" style="color: blue; text-decoration: underline; text-decoration-color: turquoise;">nerd snipe</a> on a sunday, And I took up the challenge!
+            </p>
+        </div>
+        <hr style="color: orange; border: 1px solid; margin-top: 8px; margin-bottom: 8px;">
+    </main>
+    <footer style="display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; ;">
+        <h3 style="font-size: medium; font-weight: 100;">Created by <a href="/index.html" style="color: turquoise;">Duje Nikolić Malora</a></h3>
+        <label style="font-size: small;">(One <label style="font-size: 10px;">marquee</label> for good measure...)</label>
+    </footer>
+</body>
+</html>
