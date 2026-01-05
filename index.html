@@ -10,14 +10,44 @@
         <h1 style="font-size: 48px; color: white;">
             HTML Only
         </h1>
-        <div style="font-size: medium; color: white;">
-            Navigation
+        <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+            <div style="
+                width: 0;
+                height: 0;
+                border-top: 5px solid transparent;
+                border-bottom: 5px solid transparent;
+                border-left: 10px solid white;
+                margin-right: 8px;
+            "></div>
+            <div style="font-size: medium; color: white;">
+                Navigation
+            </div>
+        </div>
+        <div style="color: white; display: flex; justify-content: center;  align-items: center;">
+            <ul>
+                <li>
+                    <a href="#WHAT">What is this?</a>
+                </li>
+                <li>
+                    <a href="#HOW">How does this work?</a>
+                </li>
+                <li>
+                    <a href="#WHY">But why?</a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        Frameset Version
+                        <br>
+                        (New in 2024)
+                    </a>
+                </li>
+            </ul>
         </div>
     </header>
     <main>
         <hr style="color: orange; border: 1px solid; margin-top: 8px; margin-bottom: 8px;">
         <div style="border: 12px magenta solid; background-color: bisque;">
-            <h1 style="margin: 16px; font-size: 36px;">
+            <h1 id="WHAT" style="margin: 16px; font-size: 36px;">
                 What is this?
             </h1>
             <p style="margin: 16px; font-size: x-large;">
@@ -28,7 +58,7 @@
         </div>
         <hr style="color: orange; border: 1px solid; margin-top: 8px; margin-bottom: 8px;">
         <div style="border: 12px skyblue solid; background-color: bisque;">
-            <h1 style="margin: 16px; font-size: 36px;">
+            <h1  id="HOW" style="margin: 16px; font-size: 36px;">
                 How does this work?
             </h1>
             <p style="margin: 16px; font-size: x-large;">
@@ -59,7 +89,7 @@
         </div>
         <hr style="color: orange; border: 1px solid; margin-top: 8px; margin-bottom: 8px;">
         <div style="border: 12px orange solid; background-color: bisque;">
-            <h1 style="margin: 16px; font-size: 36px;">
+            <h1 id="WHY" style="margin: 16px; font-size: 36px;">
                 But why?
             </h1>
             <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmlrMTlyYmYwNXJ3eXpwd3E2dWsxaXkzOHV1Z2JpOWU5cndmcHRubiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l2JhtKtDWYNKdRpoA/giphy.gif" alt="GIF" style="margin: 16px">
